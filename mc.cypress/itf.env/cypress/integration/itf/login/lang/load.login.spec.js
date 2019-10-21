@@ -10,11 +10,21 @@ describe ('Login page for SDNG HOME in ITF environment', function(){
 })
 
 
-describe ('Pick a Language', function(){
-    it ('select language', function(){
-        cy.get('select#langSelector').then (function(_select){
-                _select.val('fr_CA')
-              })
+/* describe('Pick a Language', function () {
+    it('select language', function () {
+        cy.get('select#langSelector').then(function (_select) {
+            _select.val('fr').select();
+        })
+            .wait(5000)
+            .should('contain.text', 'Français  Canadien');
+    });
+}) */
+
+describe('Pick a Language', function () {
+    it('select language', function () {
+cy.get('select#langSelector')
+
+.select('fr').should('have.value','fr')
     })
 })
 
@@ -24,12 +34,20 @@ describe ('Fill User ID Credentials', function(){
     })
     it ('type user password in User Password Box', function(){
         cy.get('input#password.gwt-PasswordTextBox').type('systest01')
+        .wait(5000)
     })
 })
 
 
 describe ('Access level 1',function(){
         it ('Submmit credentials to login',function(){
-            cy.get('button.button.r').click()
+            cy.get('button.button.r').click({force:true})
+            .wait(5000)
         })
 })
+
+/* describe ('Access to Accept Cookies page', function(){
+it ('Access next page Cookies Conscent', function(){
+    cy.get('#continue-button').click()
+})
+}) */
