@@ -3,7 +3,7 @@
 
 /// <reference types="Cypress" />
 
-describe ('Login page for SDNG HOME in ITF environment', function(){
+describe ('Check Default Cobrand URL Health', function(){
     it ('Navigate to default URL', function(){
         cy.visit('https://itf.sdg2.mastercard.com/sdportal/home.view?cobrandHost=mastercard')
     })
