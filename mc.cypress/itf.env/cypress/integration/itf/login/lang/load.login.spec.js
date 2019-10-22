@@ -10,15 +10,6 @@ describe ('Check Default Cobrand URL Health', function(){
 })
 
 
-/* describe('Pick a Language', function () {
-    it('select language', function () {
-        cy.get('select#langSelector').then(function (_select) {
-            _select.val('fr').select();
-        })
-            .wait(5000)
-            .should('contain.text', 'Français  Canadien');
-    });
-}) */
 
 describe('Pick a Language', function () {
     it('select language', function () {
