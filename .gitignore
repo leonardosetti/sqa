@@ -1,4 +1,6 @@
-support/
-screenshots/
+.gitignore
+mc.cypress/itf.env/cypress/screenshots/
+mc.cypress/itf.env/cypress/videos/
 plugins/
-videos/
+support/
+
