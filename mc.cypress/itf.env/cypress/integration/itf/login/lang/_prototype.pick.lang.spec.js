@@ -2,8 +2,8 @@
 
 describe('Pick up a Language', function () {
     it ('Land to ITF login page', function(){
-
         cy
+        .clearCookies()
 .visit('https://itf.sdg2.mastercard.com/sdportal/home.view?cobrandHost=mastercard')
 .wait(5000)
     })
