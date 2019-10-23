@@ -1,19 +1,21 @@
 /// <reference types="Cypress" />
 
 describe('Pick up a Language', function () {
-    it ('Land to ITF login page', function(){
+    it('Land to ITF login page', function () {
         cy
-        .clearCookies()
-.visit('https://itf.sdg2.mastercard.com/sdportal/home.view?cobrandHost=mastercard')
-.wait(5000)
+            .clearCookies()
+            .visit('https://itf.sdg2.mastercard.com/sdportal/home.view?cobrandHost=mastercard')
+            .wait(5000)
     })
     it('select French language before login steps', function () {
         cy.get('select#langSelector').then(function ($select) {
-            $select.val('fr').select().click({force:true})
-            //.focus('')
-            ;
-            
-        })
+                $select.val('fr').select().click({
+                    force: true
+                })
+                //.focus('')
+                ;
+
+            })
             .wait(5000)
     });
 })
