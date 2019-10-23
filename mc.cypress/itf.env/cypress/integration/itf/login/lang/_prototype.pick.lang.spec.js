@@ -10,7 +10,7 @@ describe('Pick up a Language', function () {
     it('select French language before login steps', function () {
         cy.get('select#langSelector').then(function ($select) {
             $select.val('fr').select().click({force:true})
-            .focus('')
+            //.focus('')
             ;
             
         })
