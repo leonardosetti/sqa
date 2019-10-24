@@ -1,13 +1,14 @@
 /// <reference types="Cypress" />
 
 describe('Pick up a Language', function () {
-    it ('Land to ITF login page', function(){
-
+    it('Land to Stage2 login page', function () {
         cy
-.visit('https://itf.sdg2.mastercard.com/sdportal/home.view?cobrandHost=mastercard')
-.wait(5000)
-    })
+            .clearCookies()
+            .visit('https://stage1.sdg2.mastercard.com')
+
+    });
     it('select French language before login steps', function () {
+<<<<<<< HEAD
         cy.get('select#langSelector').then(function ($select) {
             $select.val('fr').select().click({force:true})
             //.focus('')
@@ -15,5 +16,16 @@ describe('Pick up a Language', function () {
             
         })
             .wait(5000)
+=======
+        cy.
+        get('select#langSelector').then(function ($select) {
+                $select.val('fr').select().click({
+                    force: true
+                })
+
+            })
+            .focus('#loginUserID')
+            .wait(2000)
+>>>>>>> e78426c1451387562fb12e7114f3583cae226059
     });
 })
