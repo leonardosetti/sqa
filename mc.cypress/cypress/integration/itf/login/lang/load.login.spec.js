@@ -15,14 +15,14 @@ describe('Check Default Cobrand URL Health', function () {
 
 
 
-/* describe('Pick a Language', function () {
+describe('Pick a Language', function () {
     it('select language', function () {
 cy.get('select#langSelector')
 
 .select('fr').should('have.value','fr')
     })
-}) */
-/* 
+}) 
+
 describe('Fill User ID Credentials', function () {
     it('type user ID in User Id Box', function () {
         cy.get('input#userid.gwt-TextBox').type('e047475')
@@ -30,11 +30,11 @@ describe('Fill User ID Credentials', function () {
     it('type user password in User Password Box', function () {
         cy.get('input#password.gwt-PasswordTextBox').type('systest01')
                 })
-}) */
+})
 
 
 describe('Access level 1', function () {
-    it('Submmit credentials to login', function ()  {
+    it('Submmit credentials to login', function () {
         cy
             .get().xpath('//*[@id="login-module"]/form/div/div[5]/div/button').click()
 
