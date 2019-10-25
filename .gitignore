@@ -1,0 +1,9 @@
+.gitignore
+mc.cypress/itf.env/cypress/screenshots/
+mc.cypress/itf.env/cypress/videos/
+mc.cypress/itf.env/cypress/cypress.json
+/mc.cypress/itf.env/cypress.json
+plugins/
+support/
+
+
