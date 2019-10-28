@@ -1,0 +1,27 @@
+{
+  "name": "itf.env",
+  "version": "1.0.0",
+  "description": "No desc req",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^3.4.1",
+    "nodejs-latest": "^1.1.0"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leonardo Setti",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/leonardosetti/sqa.git)"
+  },
+  "keywords": [
+    "SQA",
+    "Cypress",
+    "Automation"
+  ]
+}
