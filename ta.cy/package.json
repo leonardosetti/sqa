@@ -6,7 +6,7 @@
     "node": ">=8",
     "npm": ">=3"
   },
-  "scripts": {
+    "scripts": {
     "preinstall": "node tools/nodeVersionCheck.js",
     "remove-demo": "babel-node tools/removeDemo.js",
     "start-message": "babel-node tools/startMessage.js",
@@ -26,16 +26,17 @@
     "test:cover:CI": "npm run test:CI -- --coverage && cat ./coverage/lcov.info | node_modules/coveralls/bin/coveralls.js",
     "test:watch": "jest --watchAll",
     "open:cover": "npm run test:cover && opn ./coverage/lcov-report/index.html",
-    "analyze-bundle": "babel-node ./tools/analyzeBundle.js"
+    "analyze-bundle": "babel-node ./tools/analyzeBundle.js",
+    "cy:go": "$(npm bin)/cypress run"
   },
   "author": "Leonardo Setti",
   "license": "MIT",
   "dependencies": {
-    "@hot-loader/react-dom": "16.8.6",
-    "connected-react-router": "6.4.0",
+    "@hot-loader/react-dom": "^16.8.6",
+    "connected-react-router": "^6.5.2",
     "object-assign": "4.1.1",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
+    "react": "^16.11.0",
+    "react-dom": "^16.8.6",
     "react-redux": "7.0.3",
     "react-router-dom": "5.0.0",
     "redux": "4.0.1",
