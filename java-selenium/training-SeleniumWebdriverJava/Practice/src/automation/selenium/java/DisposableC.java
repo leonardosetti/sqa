@@ -1,6 +1,6 @@
 package automation.selenium.java;
 
-public class ReturningTypes {
+public class DisposableC {
 
     public int valueInt (){
         //this method should return only integer values
