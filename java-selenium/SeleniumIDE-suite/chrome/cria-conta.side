@@ -1,0 +1,135 @@
+{
+  "id": "3576daa9-840a-40e9-b2b0-9f7985981a01",
+  "version": "2.0",
+  "name": "Udemy_quick_test_SeleniumIDE",
+  "url": "https://seubarriga.wcaquino.me",
+  "tests": [{
+    "id": "2f7153e9-12aa-46b2-958d-10e3cf3acf85",
+    "name": "CriaConta",
+    "commands": [{
+      "id": "14aade59-307a-4339-b2ad-260ff15af033",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c595cda2-d5fb-4b61-b30b-d45165046cba",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x741",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "688f2b0d-5333-4c35-bf97-7f6f99d96ef2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Novo usuário?",
+      "targets": [
+        ["linkText=Novo usuário?", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Novo usuário?')]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cadastro')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Novo usuário?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20afc3a6-ab3b-4412-a6d4-4647923dd492",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29ec16b2-58db-4002-be1e-01156ee55ac8",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Leonardo-c1"
+    }, {
+      "id": "3535108c-6f57-4b27-b7d7-d1567c2593ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "leonardo@test.com"
+    }, {
+      "id": "568981f7-db35-40ea-bd33-e96c4972aae3",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "test@123"
+    }, {
+      "id": "6ee59f77-16d0-40bb-9303-1112dc8ae743",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Cadastrar']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7fa0bc2-412c-48fb-9bb4-7ea0e8a6af62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Usuário inserido com sucesso')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b97c72f-119c-4d7a-a40e-dc5e3f036181",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Usuário inserido com sucesso')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b28cada6-8e00-4af8-996c-c9040680d87c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://seubarriga.wcaquino.me/"],
+  "plugins": []
+}
