@@ -1,7 +1,8 @@
-Feature: <WebSite> Search Engine
-  Scenario: Empty Search Box by Button
-    // Given When And Then
+Feature: BoiTempo Search Engine
+  //@mandatory
 
-    Given I am on <WebSite> Home Page
+  Scenario: Empty Search Box by Button
+
+    Given I am on BoiTempo Home Page
     When I click on SearchButton
-    Then the message <msg> shows up
+    Then the search box shows up
